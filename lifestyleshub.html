@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Hub - Your Guide to Balanced Living</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00ACC1;
+            --secondary-color: #F5F5F5;
+        }
+        
+        .navbar-custom {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .hero-section {
+            background-color: var(--secondary-color);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .category-card {
+            transition: transform 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            padding: 20px;
+            color: white;
+        }
+        
+        .article-card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .newsletter-section {
+            background: linear-gradient(45deg, #00ACC1, #26C6DA);
+            color: white;
+            border-radius: 15px;
+        }
+        
+        .btn-custom {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+        }
+        
+        .btn-custom:hover {
+            background-color: #0097A7;
+            color: white;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            margin: 0 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+        
+        .footer-link {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Lifestyle<span class="text-primary">Hub</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wellness">Wellness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fashion">Fashion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-custom ms-lg-3">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Welcome to the Lifestyle Hub</h1>
+                    <p class="lead mb-4">Explore trends, wellness, and living in the moment. Whether you're into fitness, mindfulness, or just looking to elevate your daily routines.</p>
+                    <a href="#explore" class="btn btn-custom btn-lg">Start Exploring</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://www.manulife.co.id/id/artikel/kenali-pola-hidup-sehat-dan-langkah-langkahnya/_jcr_content/root/responsivegrid_641029165/responsivegrid_62007/responsivegrid_1872166159/responsivegrid_48142/image.coreimg.82.1000.jpeg/1687617241340/id-pws-kenali-pola-hidup-sehat-dan-langkah-langkahnya-details.jpeg" style="width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Explore Our Categories</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="category-card card h-100 shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnL0jW920dzeQ_b7vwhJT-VWQkDtBtnKgTxw&s">
+                        <div class="category-overlay">
+                            <h4 class="mb-2">Wellness</h4>
+                            <p class="mb-0">Discover the latest trends in wellness and mindfulness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card card h-100 shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrYoXD9FF8-pmXHR94-NQIuSyCiLkgWWN6ig&s">
+                        <div class="category-overlay">
+                            <h4 class="mb-2">Fashion & Style</h4>
+                            <p class="mb-0">Stay ahead with sustainable fashion tips and trends.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card card h-100 shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfDVz3_MJa-PFKx1a3LIqSwGjHfrpuvxD0tg&s">
+                        <div class="category-overlay">
+                            <h4 class="mb-2">Daily Living</h4>
+                            <p class="mb-0">Tips and tricks for a balanced lifestyle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Latest Articles</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="article-card card h-100 shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tloXXTKer4uZeUSLkK5ZenU8fuOiCVVXcg&s">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Wellness</span>
+                            <h5 class="card-title">Morning Routines for Success</h5>
+                            <p class="card-text">Discover how successful people start their day and implement their practices.</p>
+                            <a href="#" class="btn btn-link text-primary p-0">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="article-card card h-100 shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5FSJdtWbDLz9Z2JSEwvnsdJfOFiqMmp4jsw&s" style="width: 100%; height: 100%;">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Fashion</span>
+                            <h5 class="card-title">Sustainable Fashion Guide</h5>
+                            <p class="card-text">Learn how to build a sustainable wardrobe without compromising style.</p>
+                            <a href="#" class="btn btn-link text-primary p-0">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="article-card card h-100 shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbJ5PAh5Aji_pbdNIZNqJkphHS1NFg7bYapA&s" style="width: 100%; height: 100%;">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Lifestyle</span>
+                            <h5 class="card-title">Mindful Living Tips</h5>
+                            <p class="card-text">Simple ways to incorporate mindfulness into your daily routine.</p>
+                            <a href="#" class="btn btn-link text-primary p-0">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="newsletter-section p-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="mb-3">Join Our Community</h3>
+                        <p class="mb-0">Subscribe to get the latest lifestyle updates and exclusive content.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="row g-3">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-light">Subscribe Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-3">About LifestyleHub</h5>
+                    <p class="text-muted">Your go-to destination for lifestyle inspiration, wellness tips, and fashion trends.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Wellness</a></li>
+                        <li><a href="#" class="footer-link">Fashion</a></li>
+                        <li><a href="#" class="footer-link">Lifestyle</a></li>
+                        <li><a href="#" class="footer-link">Mindfulness</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p class="text-muted">Have questions? We'd love to hear from you.</p>
+                    <p class="text-muted mb-0">
+                        <i class="fas fa-envelope me-2"></i> contact@lifestylehub.com<br>
+                        <i class="fas fa-phone me-2"></i> (123) 456-7890
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center text-muted">
+                <small>&copy; 2024 LifestyleHub. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
